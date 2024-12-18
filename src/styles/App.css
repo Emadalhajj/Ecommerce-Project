@@ -1,0 +1,69 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+/* .text-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  } */
+  
+  .text-wrap {
+    white-space: normal;
+    word-wrap: break-word;
+    
+  }
+
+/*navbar links*/
+.navLinks{
+
+  border-bottom: 1px solid gray !important;
+}
+.icons{
+   
+    border-radius: 50%;
+    
+}
+.ceualMidia i{
+  font-size: 22px;
+}
+.table {
+  border-collapse: separate;
+  border-spacing: 0 20px; 
+}
+
+.table th,
+.table td {
+  border: none; 
+}
+
+.table thead th {
+  border-bottom: 2px solid #ddd; 
+}
+
+.table tbody tr {
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1); /* تأثير الظل */
+  border-radius: 8px;
+}
+
+.table tbody tr td {
+  vertical-align: middle; /* ضبط النص في منتصف الخلية */
+}
+/*products details*/
+img {
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+/*a*/
+.accordion-button::after {
+  display: none; /* إزالة السهم الافتراضي */
+}
+/*banner part*/
+@media (max-width: 576px) {
+  .custom-row {
+    max-width: 100%; /* اجعل العرض كاملاً على الشاشات الصغيرة */
+  }
+}

@@ -1,0 +1,971 @@
+[debug] [2024-09-14T05:47:33.765Z] ----------------------------------------------------------------------
+[debug] [2024-09-14T05:47:33.768Z] Command:       C:\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2024-09-14T05:47:33.768Z] CLI Version:   13.16.0
+[debug] [2024-09-14T05:47:33.768Z] Platform:      win32
+[debug] [2024-09-14T05:47:33.768Z] Node Version:  v20.11.1
+[debug] [2024-09-14T05:47:33.768Z] Time:          Sat Sep 14 2024 08:47:33 GMT+0300 (Arabian Standard Time)
+[debug] [2024-09-14T05:47:33.769Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-14T05:47:33.899Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-14T05:47:33.899Z] > authorizing via signed-in user (emadalhaj2022@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2024-09-14T05:47:33.914Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-09-14T05:47:33.914Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-09-14T05:47:33.920Z] [hub] writing locator at C:\Users\User\AppData\Local\Temp\hub-albukhbah-world.json
+[debug] [2024-09-14T05:47:33.972Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-09-14T05:47:33.972Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-09-14T05:47:33.972Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-09-14T05:47:33.972Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2024-09-14T05:47:33.978Z] defaultcredentials: writing to file C:\Users\User\AppData\Roaming\firebase\emadalhaj2022_gmail_com_application_default_credentials.json
+[debug] [2024-09-14T05:47:33.981Z] Setting GAC to C:\Users\User\AppData\Roaming\firebase\emadalhaj2022_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\User\\AppData\\Roaming\\firebase\\emadalhaj2022_gmail_com_application_default_credentials.json"}}
+[debug] [2024-09-14T05:47:33.984Z] > refreshing access token with scopes: []
+[debug] [2024-09-14T05:47:33.987Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-09-14T05:47:33.987Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-09-14T05:47:34.387Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-09-14T05:47:34.387Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-09-14T05:47:34.410Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/albukhbah-world/adminSdkConfig [none]
+[debug] [2024-09-14T05:47:34.923Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/albukhbah-world/adminSdkConfig 200
+[debug] [2024-09-14T05:47:34.923Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/albukhbah-world/adminSdkConfig {"projectId":"albukhbah-world","storageBucket":"albukhbah-world.appspot.com"}
+[info] i  ui: downloading ui-v1.13.0.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.13.0.zip..."}}
+[debug] [2024-09-14T05:47:34.955Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.13.0.zip 
+[debug] [2024-09-14T05:47:35.487Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.13.0.zip 200
+[debug] [2024-09-14T05:47:35.487Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.13.0.zip [stream]
+[debug] [2024-09-14T05:47:39.437Z] Data is 3605485
+[debug] [2024-09-14T05:47:39.438Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-09-14T05:47:39.438Z] [unzip] Processing entry: client\
+[debug] [2024-09-14T05:47:39.438Z] [unzip] mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\
+[debug] [2024-09-14T05:47:39.439Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=293 bytes, uncompressed_size=293 bytes)
+[debug] [2024-09-14T05:47:39.439Z] [unzip] Processing entry: client\favicon-16x16.png
+[debug] [2024-09-14T05:47:39.439Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client
+[debug] [2024-09-14T05:47:39.440Z] [unzip] Writing file: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\favicon-16x16.png
+[debug] [2024-09-14T05:47:39.442Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=1433 bytes, uncompressed_size=2611 bytes)
+[debug] [2024-09-14T05:47:39.442Z] [unzip] Processing entry: client\safari-pinned-tab.svg
+[debug] [2024-09-14T05:47:39.442Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client
+[debug] [2024-09-14T05:47:39.443Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\safari-pinned-tab.svg
+[debug] [2024-09-14T05:47:39.448Z] [unzip] Entry: client/favicon.ico (compressed_size=2933 bytes, uncompressed_size=13294 bytes)
+[debug] [2024-09-14T05:47:39.448Z] [unzip] Processing entry: client\favicon.ico
+[debug] [2024-09-14T05:47:39.449Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client
+[debug] [2024-09-14T05:47:39.449Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\favicon.ico
+[debug] [2024-09-14T05:47:39.450Z] [unzip] Entry: client/index.html (compressed_size=1361 bytes, uncompressed_size=3071 bytes)
+[debug] [2024-09-14T05:47:39.451Z] [unzip] Processing entry: client\index.html
+[debug] [2024-09-14T05:47:39.451Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client
+[debug] [2024-09-14T05:47:39.451Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\index.html
+[debug] [2024-09-14T05:47:39.454Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=2684 bytes, uncompressed_size=2684 bytes)
+[debug] [2024-09-14T05:47:39.454Z] [unzip] Processing entry: client\android-chrome-192x192.png
+[debug] [2024-09-14T05:47:39.454Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client
+[debug] [2024-09-14T05:47:39.455Z] [unzip] Writing file: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\android-chrome-192x192.png
+[debug] [2024-09-14T05:47:39.456Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=2123 bytes, uncompressed_size=2152 bytes)
+[debug] [2024-09-14T05:47:39.456Z] [unzip] Processing entry: client\apple-touch-icon.png
+[debug] [2024-09-14T05:47:39.456Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client
+[debug] [2024-09-14T05:47:39.457Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\apple-touch-icon.png
+[debug] [2024-09-14T05:47:39.459Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=5369 bytes, uncompressed_size=5411 bytes)
+[debug] [2024-09-14T05:47:39.459Z] [unzip] Processing entry: client\android-chrome-512x512.png
+[debug] [2024-09-14T05:47:39.459Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client
+[debug] [2024-09-14T05:47:39.459Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\android-chrome-512x512.png
+[debug] [2024-09-14T05:47:39.461Z] [unzip] Entry: client/manifest.json (compressed_size=245 bytes, uncompressed_size=551 bytes)
+[debug] [2024-09-14T05:47:39.461Z] [unzip] Processing entry: client\manifest.json
+[debug] [2024-09-14T05:47:39.461Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client
+[debug] [2024-09-14T05:47:39.461Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\manifest.json
+[debug] [2024-09-14T05:47:39.462Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2024-09-14T05:47:39.463Z] [unzip] Processing entry: client\robots.txt
+[debug] [2024-09-14T05:47:39.463Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client
+[debug] [2024-09-14T05:47:39.463Z] [unzip] Writing file: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\robots.txt
+[debug] [2024-09-14T05:47:39.464Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=2034 bytes, uncompressed_size=2034 bytes)
+[debug] [2024-09-14T05:47:39.465Z] [unzip] Processing entry: client\mstile-150x150.png
+[debug] [2024-09-14T05:47:39.465Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client
+[debug] [2024-09-14T05:47:39.465Z] [unzip] Writing file: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\mstile-150x150.png
+[debug] [2024-09-14T05:47:39.467Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-09-14T05:47:39.467Z] [unzip] Processing entry: client\assets\
+[debug] [2024-09-14T05:47:39.467Z] [unzip] mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\
+[debug] [2024-09-14T05:47:39.468Z] [unzip] Entry: client/assets/index-I-mhtQda.js.map (compressed_size=2322562 bytes, uncompressed_size=9922747 bytes)
+[debug] [2024-09-14T05:47:39.468Z] [unzip] Processing entry: client\assets\index-I-mhtQda.js.map
+[debug] [2024-09-14T05:47:39.468Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets
+[debug] [2024-09-14T05:47:39.468Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\index-I-mhtQda.js.map
+[debug] [2024-09-14T05:47:39.528Z] [unzip] Entry: client/assets/index-BdgySamB.css (compressed_size=35979 bytes, uncompressed_size=298654 bytes)
+[debug] [2024-09-14T05:47:39.529Z] [unzip] Processing entry: client\assets\index-BdgySamB.css
+[debug] [2024-09-14T05:47:39.529Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets
+[debug] [2024-09-14T05:47:39.529Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\index-BdgySamB.css
+[debug] [2024-09-14T05:47:39.532Z] [unzip] Entry: client/assets/index-I-mhtQda.js (compressed_size=565968 bytes, uncompressed_size=2030855 bytes)
+[debug] [2024-09-14T05:47:39.532Z] [unzip] Processing entry: client\assets\index-I-mhtQda.js
+[debug] [2024-09-14T05:47:39.532Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets
+[debug] [2024-09-14T05:47:39.533Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\index-I-mhtQda.js
+[debug] [2024-09-14T05:47:39.550Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-09-14T05:47:39.550Z] [unzip] Processing entry: client\assets\extensions\
+[debug] [2024-09-14T05:47:39.550Z] [unzip] mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\extensions\
+[debug] [2024-09-14T05:47:39.550Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2024-09-14T05:47:39.550Z] [unzip] Processing entry: client\assets\extensions\default-extension.png
+[debug] [2024-09-14T05:47:39.550Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\extensions
+[debug] [2024-09-14T05:47:39.551Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\extensions\default-extension.png
+[debug] [2024-09-14T05:47:39.552Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-09-14T05:47:39.552Z] [unzip] Processing entry: client\assets\img\
+[debug] [2024-09-14T05:47:39.552Z] [unzip] mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\img\
+[debug] [2024-09-14T05:47:39.553Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2024-09-14T05:47:39.553Z] [unzip] Processing entry: client\assets\img\database.png
+[debug] [2024-09-14T05:47:39.553Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\img
+[debug] [2024-09-14T05:47:39.553Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\img\database.png
+[debug] [2024-09-14T05:47:39.555Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-09-14T05:47:39.555Z] [unzip] Processing entry: client\assets\provider-icons\
+[debug] [2024-09-14T05:47:39.556Z] [unzip] mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons\
+[debug] [2024-09-14T05:47:39.556Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2024-09-14T05:47:39.557Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_saml.svg
+[debug] [2024-09-14T05:47:39.557Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons
+[debug] [2024-09-14T05:47:39.557Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons\auth_service_saml.svg
+[debug] [2024-09-14T05:47:39.559Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2024-09-14T05:47:39.559Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_phone.svg
+[debug] [2024-09-14T05:47:39.560Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons
+[debug] [2024-09-14T05:47:39.560Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons\auth_service_phone.svg
+[debug] [2024-09-14T05:47:39.563Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2024-09-14T05:47:39.563Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2024-09-14T05:47:39.563Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons
+[debug] [2024-09-14T05:47:39.563Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2024-09-14T05:47:39.565Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2024-09-14T05:47:39.565Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2024-09-14T05:47:39.565Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons
+[debug] [2024-09-14T05:47:39.565Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2024-09-14T05:47:39.569Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2024-09-14T05:47:39.569Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_apple.svg
+[debug] [2024-09-14T05:47:39.570Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons
+[debug] [2024-09-14T05:47:39.570Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons\auth_service_apple.svg
+[debug] [2024-09-14T05:47:39.575Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2024-09-14T05:47:39.575Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_github.svg
+[debug] [2024-09-14T05:47:39.575Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons
+[debug] [2024-09-14T05:47:39.576Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons\auth_service_github.svg
+[debug] [2024-09-14T05:47:39.577Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2024-09-14T05:47:39.577Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2024-09-14T05:47:39.577Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons
+[debug] [2024-09-14T05:47:39.578Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2024-09-14T05:47:39.583Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2024-09-14T05:47:39.584Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2024-09-14T05:47:39.584Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons
+[debug] [2024-09-14T05:47:39.585Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2024-09-14T05:47:39.587Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2024-09-14T05:47:39.587Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2024-09-14T05:47:39.587Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons
+[debug] [2024-09-14T05:47:39.587Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2024-09-14T05:47:39.588Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2024-09-14T05:47:39.589Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2024-09-14T05:47:39.589Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons
+[debug] [2024-09-14T05:47:39.589Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2024-09-14T05:47:39.590Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2024-09-14T05:47:39.591Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_email.svg
+[debug] [2024-09-14T05:47:39.591Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons
+[debug] [2024-09-14T05:47:39.591Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons\auth_service_email.svg
+[debug] [2024-09-14T05:47:39.592Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2024-09-14T05:47:39.595Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_google.svg
+[debug] [2024-09-14T05:47:39.595Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons
+[debug] [2024-09-14T05:47:39.595Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons\auth_service_google.svg
+[debug] [2024-09-14T05:47:39.599Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2024-09-14T05:47:39.599Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2024-09-14T05:47:39.599Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons
+[debug] [2024-09-14T05:47:39.600Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2024-09-14T05:47:39.601Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2024-09-14T05:47:39.601Z] [unzip] Processing entry: client\browserconfig.xml
+[debug] [2024-09-14T05:47:39.601Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client
+[debug] [2024-09-14T05:47:39.602Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\browserconfig.xml
+[debug] [2024-09-14T05:47:39.606Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=475 bytes, uncompressed_size=475 bytes)
+[debug] [2024-09-14T05:47:39.606Z] [unzip] Processing entry: client\favicon-32x32.png
+[debug] [2024-09-14T05:47:39.606Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client
+[debug] [2024-09-14T05:47:39.606Z] [unzip] Writing file: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\client\favicon-32x32.png
+[debug] [2024-09-14T05:47:39.610Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-09-14T05:47:39.610Z] [unzip] Processing entry: server\
+[debug] [2024-09-14T05:47:39.610Z] [unzip] mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\server\
+[debug] [2024-09-14T05:47:39.610Z] [unzip] Entry: server/server.mjs.map (compressed_size=294629 bytes, uncompressed_size=1346672 bytes)
+[debug] [2024-09-14T05:47:39.610Z] [unzip] Processing entry: server\server.mjs.map
+[debug] [2024-09-14T05:47:39.610Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\server
+[debug] [2024-09-14T05:47:39.611Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\server\server.mjs.map
+[debug] [2024-09-14T05:47:39.626Z] [unzip] Entry: server/server.mjs (compressed_size=314679 bytes, uncompressed_size=1167517 bytes)
+[debug] [2024-09-14T05:47:39.626Z] [unzip] Processing entry: server\server.mjs
+[debug] [2024-09-14T05:47:39.626Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\server
+[debug] [2024-09-14T05:47:39.627Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\server\server.mjs
+[debug] [2024-09-14T05:47:39.639Z] [unzip] Entry: server/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-09-14T05:47:39.639Z] [unzip] Processing entry: server\assets\
+[debug] [2024-09-14T05:47:39.639Z] [unzip] mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\server\assets\
+[debug] [2024-09-14T05:47:39.640Z] [unzip] Entry: server/assets/multipart-parser-DGCUZdXu.mjs.map (compressed_size=4791 bytes, uncompressed_size=17918 bytes)
+[debug] [2024-09-14T05:47:39.640Z] [unzip] Processing entry: server\assets\multipart-parser-DGCUZdXu.mjs.map
+[debug] [2024-09-14T05:47:39.640Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\server\assets
+[debug] [2024-09-14T05:47:39.640Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\server\assets\multipart-parser-DGCUZdXu.mjs.map
+[debug] [2024-09-14T05:47:39.641Z] [unzip] Entry: server/assets/multipart-parser-DGCUZdXu.mjs (compressed_size=2621 bytes, uncompressed_size=10390 bytes)
+[debug] [2024-09-14T05:47:39.641Z] [unzip] Processing entry: server\assets\multipart-parser-DGCUZdXu.mjs
+[debug] [2024-09-14T05:47:39.641Z] [unzip] else mkdir: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\server\assets
+[debug] [2024-09-14T05:47:39.641Z] [unzip] deflating: C:\Users\User\.cache\firebase\emulators\ui-v1.13.0\server\assets\multipart-parser-DGCUZdXu.mjs
+[debug] [2024-09-14T05:47:39.643Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-09-14T05:47:39.643Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-09-14T05:47:39.644Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\User\\.cache\\firebase\\emulators\\ui-v1.13.0\\server\\server.mjs"],"optionalArgs":[],"joinArgs":false,"shell":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\User\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.13.0\\\\server\\\\server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false,\"shell\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-09-14T05:47:39.883Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-09-14T05:47:39.884Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\User\\Desktop\\All Projects\\myreact\\alnukhbah website\\app\\functions\" for Cloud Functions..."}}
+[debug] [2024-09-14T05:47:40.108Z] Validating nodejs source
+[debug] [2024-09-14T05:47:50.152Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\Windows\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1124:20)
+    at Object.spawnSync (node:child_process:876:24)
+    at Function.spawnSync [as sync] (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:85:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:303:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:339:34)
+    at async FunctionsEmulator.connect (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:269:13)
+    at async Object.startAll (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js:600:13)
+[debug] [2024-09-14T05:47:50.153Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-09-14T05:47:50.153Z] Building nodejs source
+[debug] [2024-09-14T05:47:50.154Z] Failed to find version of module node: reached end of search path C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-09-14T05:47:50.157Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-09-14T05:47:50.183Z] Found firebase-functions binary at 'C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8778
+
+[debug] [2024-09-14T05:47:58.695Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/albukhbah-world/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/albukhbah-world/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-09-14T05:48:44.367Z] [work-queue] {"queuedWork":["/albukhbah-world/us-central1/api-2024-09-14T05:48:44.367Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-09-14T05:48:44.368Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/albukhbah-world/us-central1/api-2024-09-14T05:48:44.367Z"],"workRunningCount":1}
+[debug] [2024-09-14T05:48:44.368Z] Accepted request GET /albukhbah-world/us-central1/api --> us-central1-api
+[debug] [2024-09-14T05:48:44.372Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-09-14T05:48:44.373Z] [functions] Got req.url=/albukhbah-world/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/albukhbah-world/us-central1/api, mapping to path=/"}}
+[debug] [2024-09-14T05:48:44.388Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2024-09-14T05:48:44.390Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2024-09-14T05:48:46.208Z] [runtime-status] [12140] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.5.0","resolution":"C:\\Users\\User\\Desktop\\All Projects\\myreact\\alnukhbah website\\app\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12140] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.5.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Desktop\\\\All Projects\\\\myreact\\\\alnukhbah website\\\\app\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-09-14T05:48:46.209Z] [runtime-status] [12140] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.1.1","resolution":"C:\\Users\\User\\Desktop\\All Projects\\myreact\\alnukhbah website\\app\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12140] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.1.1\",\"resolution\":\"C:\\\\Users\\\\User\\\\Desktop\\\\All Projects\\\\myreact\\\\alnukhbah website\\\\app\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-09-14T05:48:46.209Z] [runtime-status] [12140] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12140] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-09-14T05:48:46.210Z] [runtime-status] [12140] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.1.1","resolution":"C:\\Users\\User\\Desktop\\All Projects\\myreact\\alnukhbah website\\app\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12140] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.1.1\",\"resolution\":\"C:\\\\Users\\\\User\\\\Desktop\\\\All Projects\\\\myreact\\\\alnukhbah website\\\\app\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-09-14T05:48:46.573Z] [runtime-status] [12140] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12140] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-09-14T05:48:46.574Z] [runtime-status] [12140] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"5.1.1","resolution":"C:\\Users\\User\\Desktop\\All Projects\\myreact\\alnukhbah website\\app\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12140] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"5.1.1\",\"resolution\":\"C:\\\\Users\\\\User\\\\Desktop\\\\All Projects\\\\myreact\\\\alnukhbah website\\\\app\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2024-09-14T05:48:46.574Z] [runtime-status] [12140] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.1.1","resolution":"C:\\Users\\User\\Desktop\\All Projects\\myreact\\alnukhbah website\\app\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12140] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.1.1\",\"resolution\":\"C:\\\\Users\\\\User\\\\Desktop\\\\All Projects\\\\myreact\\\\alnukhbah website\\\\app\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-09-14T05:48:46.576Z] [runtime-status] [12140] Resolved module firebase-admin {"declared":true,"installed":true,"version":"12.5.0","resolution":"C:\\Users\\User\\Desktop\\All Projects\\myreact\\alnukhbah website\\app\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12140] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"12.5.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Desktop\\\\All Projects\\\\myreact\\\\alnukhbah website\\\\app\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-09-14T05:48:46.613Z] [runtime-status] [12140] Resolved module firebase-functions {"declared":true,"installed":true,"version":"5.1.1","resolution":"C:\\Users\\User\\Desktop\\All Projects\\myreact\\alnukhbah website\\app\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12140] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"5.1.1\",\"resolution\":\"C:\\\\Users\\\\User\\\\Desktop\\\\All Projects\\\\myreact\\\\alnukhbah website\\\\app\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-09-14T05:48:46.613Z] [runtime-status] [12140] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"12.5.0","resolution":"C:\\Users\\User\\Desktop\\All Projects\\myreact\\alnukhbah website\\app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12140] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"12.5.0\",\"resolution\":\"C:\\\\Users\\\\User\\\\Desktop\\\\All Projects\\\\myreact\\\\alnukhbah website\\\\app\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-09-14T05:48:46.867Z] [runtime-status] [12140] Functions runtime initialized. {"cwd":"C:\\Users\\User\\Desktop\\All Projects\\myreact\\alnukhbah website\\app\\functions","node_version":"20.11.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12140] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\User\\\\Desktop\\\\All Projects\\\\myreact\\\\alnukhbah website\\\\app\\\\functions\",\"node_version\":\"20.11.1\"}"}}
+[debug] [2024-09-14T05:48:46.868Z] [runtime-status] [12140] Listening to port: \\?\pipe\fire_emu_71af61cd58ffcecd {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12140] Listening to port: \\\\?\\pipe\\fire_emu_71af61cd58ffcecd"}}
+[debug] [2024-09-14T05:48:46.921Z] [worker-us-central1-api-d80dd108-fb58-42b9-9dff-a858f77326b0]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-d80dd108-fb58-42b9-9dff-a858f77326b0]: IDLE"}}
+[debug] [2024-09-14T05:48:46.922Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-09-14T05:48:46.925Z] [worker-us-central1-api-d80dd108-fb58-42b9-9dff-a858f77326b0]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-d80dd108-fb58-42b9-9dff-a858f77326b0]: BUSY"}}
+[debug] [2024-09-14T05:48:46.934Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 8.9542ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 8.9542ms"}}
+[debug] [2024-09-14T05:48:46.934Z] [worker-us-central1-api-d80dd108-fb58-42b9-9dff-a858f77326b0]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-d80dd108-fb58-42b9-9dff-a858f77326b0]: IDLE"}}
+[debug] [2024-09-14T05:48:46.935Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-09-14T05:48:46.935Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-09-14T05:48:46.935Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-09-14T05:48:47.395Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2024-09-14T05:48:49.571Z] [work-queue] {"queuedWork":["/albukhbah-world/us-central1/api-2024-09-14T05:48:49.571Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-09-14T05:48:49.572Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/albukhbah-world/us-central1/api-2024-09-14T05:48:49.571Z"],"workRunningCount":1}
+[debug] [2024-09-14T05:48:49.572Z] Accepted request GET /albukhbah-world/us-central1/api --> us-central1-api
+[debug] [2024-09-14T05:48:49.573Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-09-14T05:48:49.573Z] [functions] Got req.url=/albukhbah-world/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/albukhbah-world/us-central1/api, mapping to path=/"}}
+[debug] [2024-09-14T05:48:49.573Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-09-14T05:48:49.575Z] [worker-us-central1-api-d80dd108-fb58-42b9-9dff-a858f77326b0]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-d80dd108-fb58-42b9-9dff-a858f77326b0]: BUSY"}}
+[debug] [2024-09-14T05:48:49.581Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 7.6208ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 7.6208ms"}}
+[debug] [2024-09-14T05:48:49.585Z] [worker-us-central1-api-d80dd108-fb58-42b9-9dff-a858f77326b0]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-d80dd108-fb58-42b9-9dff-a858f77326b0]: IDLE"}}
+[debug] [2024-09-14T05:48:49.586Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-09-14T05:48:49.586Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-09-14T05:48:49.586Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-09-14T05:49:37.242Z] File C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Desktop\\All Projects\\myreact\\alnukhbah website\\app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-09-14T05:49:38.249Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-09-14T05:49:39.890Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-09-14T05:49:39.891Z] Building nodejs source
+[debug] [2024-09-14T05:49:39.891Z] Failed to find version of module node: reached end of search path C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-09-14T05:49:39.893Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-09-14T05:49:39.901Z] Found firebase-functions binary at 'C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8153
+
+[debug] [2024-09-14T05:49:40.756Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2024-09-14T05:49:43.909Z] File C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Desktop\\All Projects\\myreact\\alnukhbah website\\app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-09-14T05:49:44.921Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-09-14T05:49:48.603Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-09-14T05:49:48.603Z] Building nodejs source
+[debug] [2024-09-14T05:49:48.603Z] Failed to find version of module node: reached end of search path C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-09-14T05:49:48.604Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-09-14T05:49:48.610Z] Found firebase-functions binary at 'C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules\.bin\firebase-functions'
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-09-14T05:49:48.618Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2024-09-14T05:49:48.618Z] [worker-us-central1-api-d80dd108-fb58-42b9-9dff-a858f77326b0]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-d80dd108-fb58-42b9-9dff-a858f77326b0]: FINISHING"}}
+[debug] [2024-09-14T05:49:48.620Z] File C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Desktop\\All Projects\\myreact\\alnukhbah website\\app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-09-14T05:49:48.643Z] [worker-us-central1-api-d80dd108-fb58-42b9-9dff-a858f77326b0]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-d80dd108-fb58-42b9-9dff-a858f77326b0]: exited"}}
+[debug] [2024-09-14T05:49:48.643Z] [worker-us-central1-api-d80dd108-fb58-42b9-9dff-a858f77326b0]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-d80dd108-fb58-42b9-9dff-a858f77326b0]: FINISHED"}}
+[info] Serving at port 8282
+
+[debug] [2024-09-14T05:49:49.386Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2024-09-14T05:49:49.626Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-09-14T05:49:51.293Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-09-14T05:49:51.293Z] Building nodejs source
+[debug] [2024-09-14T05:49:51.293Z] Failed to find version of module node: reached end of search path C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-09-14T05:49:51.296Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-09-14T05:49:51.304Z] Found firebase-functions binary at 'C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8860
+
+[debug] [2024-09-14T05:49:52.057Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2024-09-14T05:49:53.969Z] File C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Desktop\\All Projects\\myreact\\alnukhbah website\\app\\functions\\index.js changed, reloading triggers"}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-09-14T05:49:54.981Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-09-14T05:49:56.822Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-09-14T05:49:56.823Z] Building nodejs source
+[debug] [2024-09-14T05:49:56.823Z] Failed to find version of module node: reached end of search path C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-09-14T05:49:56.824Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-09-14T05:49:56.830Z] Found firebase-functions binary at 'C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-09-14T05:49:56.840Z] File C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Desktop\\All Projects\\myreact\\alnukhbah website\\app\\functions\\index.js changed, reloading triggers"}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] Serving at port 8911
+
+[debug] [2024-09-14T05:49:57.710Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2024-09-14T05:49:57.852Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-09-14T05:49:59.317Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-09-14T05:49:59.317Z] Building nodejs source
+[debug] [2024-09-14T05:49:59.317Z] Failed to find version of module node: reached end of search path C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-09-14T05:49:59.319Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-09-14T05:49:59.324Z] Found firebase-functions binary at 'C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-09-14T05:49:59.330Z] File C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Desktop\\All Projects\\myreact\\alnukhbah website\\app\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8740
+
+[debug] [2024-09-14T05:50:00.333Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-09-14T05:50:02.083Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-09-14T05:50:02.084Z] Building nodejs source
+[debug] [2024-09-14T05:50:02.084Z] Failed to find version of module node: reached end of search path C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-09-14T05:50:02.085Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-09-14T05:50:02.090Z] Found firebase-functions binary at 'C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-09-14T05:50:02.096Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] Serving at port 8089
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-09-14T05:50:02.991Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-09-14T05:50:17.955Z] File C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Desktop\\All Projects\\myreact\\alnukhbah website\\app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-09-14T05:50:18.973Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-09-14T05:50:20.891Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-09-14T05:50:20.891Z] Building nodejs source
+[debug] [2024-09-14T05:50:20.891Z] Failed to find version of module node: reached end of search path C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-09-14T05:50:20.892Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-09-14T05:50:20.897Z] Found firebase-functions binary at 'C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8267
+
+[debug] [2024-09-14T05:50:21.847Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2024-09-14T05:50:22.873Z] File C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Desktop\\All Projects\\myreact\\alnukhbah website\\app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-09-14T05:50:23.883Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-09-14T05:50:25.298Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-09-14T05:50:25.299Z] Building nodejs source
+[debug] [2024-09-14T05:50:25.299Z] Failed to find version of module node: reached end of search path C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-09-14T05:50:25.300Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-09-14T05:50:25.306Z] Found firebase-functions binary at 'C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8588
+
+[debug] [2024-09-14T05:50:26.086Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-09-14T06:22:06.900Z] File C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Desktop\\All Projects\\myreact\\alnukhbah website\\app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-09-14T06:22:06.977Z] File C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Desktop\\All Projects\\myreact\\alnukhbah website\\app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2024-09-14T06:22:08.014Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-09-14T06:22:10.819Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-09-14T06:22:10.819Z] Building nodejs source
+[debug] [2024-09-14T06:22:10.821Z] Failed to find version of module node: reached end of search path C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-09-14T06:22:10.832Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-09-14T06:22:10.848Z] Found firebase-functions binary at 'C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-09-14T06:22:10.873Z] File C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Desktop\\All Projects\\myreact\\alnukhbah website\\app\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8679
+
+[debug] [2024-09-14T06:22:11.876Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-09-14T06:22:13.585Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-09-14T06:22:13.585Z] Building nodejs source
+[debug] [2024-09-14T06:22:13.585Z] Failed to find version of module node: reached end of search path C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-09-14T06:22:13.586Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-09-14T06:22:13.593Z] Found firebase-functions binary at 'C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules\.bin\firebase-functions'
+[debug] [2024-09-14T06:22:13.605Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2024-09-14T06:22:13.631Z] File C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\User\\Desktop\\All Projects\\myreact\\alnukhbah website\\app\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8167
+
+[debug] [2024-09-14T06:22:14.472Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2024-09-14T06:22:14.636Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-09-14T06:22:16.169Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-09-14T06:22:16.169Z] Building nodejs source
+[debug] [2024-09-14T06:22:16.169Z] Failed to find version of module node: reached end of search path C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-09-14T06:22:16.170Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-09-14T06:22:16.176Z] Found firebase-functions binary at 'C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8584
+
+[debug] [2024-09-14T06:22:16.899Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2024-09-17T05:52:20.688Z] ----------------------------------------------------------------------
+[debug] [2024-09-17T05:52:20.704Z] Command:       C:\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2024-09-17T05:52:20.705Z] CLI Version:   13.16.0
+[debug] [2024-09-17T05:52:20.705Z] Platform:      win32
+[debug] [2024-09-17T05:52:20.705Z] Node Version:  v20.11.1
+[debug] [2024-09-17T05:52:20.705Z] Time:          Tue Sep 17 2024 08:52:20 GMT+0300 (Arabian Standard Time)
+[debug] [2024-09-17T05:52:20.706Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-17T05:52:20.858Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-17T05:52:20.858Z] > authorizing via signed-in user (emadalhaj2022@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2024-09-17T05:52:20.870Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4002 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4002 instead."}}
+[debug] [2024-09-17T05:52:20.872Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4002},{"address":"::1","family":"IPv6","port":4002}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project albukhbah-world. This may result in unexpected behavior. 
+[debug] [2024-09-17T05:52:20.879Z] [hub] writing locator at C:\Users\User\AppData\Local\Temp\hub-albukhbah-world.json
+[debug] [2024-09-17T05:52:20.939Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-09-17T05:52:20.940Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-09-17T05:52:20.940Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-09-17T05:52:20.940Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4002},{"address":"::1","family":"IPv6","port":4002}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2024-09-17T05:52:20.944Z] defaultcredentials: writing to file C:\Users\User\AppData\Roaming\firebase\emadalhaj2022_gmail_com_application_default_credentials.json
+[debug] [2024-09-17T05:52:20.948Z] Setting GAC to C:\Users\User\AppData\Roaming\firebase\emadalhaj2022_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\User\\AppData\\Roaming\\firebase\\emadalhaj2022_gmail_com_application_default_credentials.json"}}
+[debug] [2024-09-17T05:52:20.951Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/albukhbah-world/adminSdkConfig [none]
+[debug] [2024-09-17T05:52:21.459Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/albukhbah-world/adminSdkConfig 200
+[debug] [2024-09-17T05:52:21.459Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/albukhbah-world/adminSdkConfig {"projectId":"albukhbah-world","storageBucket":"albukhbah-world.appspot.com"}
+[debug] [2024-09-17T05:52:21.514Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-09-17T05:52:21.514Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-09-17T05:52:21.514Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\User\\.cache\\firebase\\emulators\\ui-v1.13.0\\server\\server.mjs"],"optionalArgs":[],"joinArgs":false,"shell":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\User\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.13.0\\\\server\\\\server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false,\"shell\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-09-17T05:52:21.691Z] Web / API server started at 127.0.0.1:4002
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4002\n"}}
+[debug] [2024-09-17T05:52:21.691Z] Web / API server started at ::1:4002
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4002\n"}}
+[info] i  functions: Watching "C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\User\\Desktop\\All Projects\\myreact\\alnukhbah website\\app\\functions\" for Cloud Functions..."}}
+[debug] [2024-09-17T05:52:21.770Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-09-17T05:52:23.991Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-09-17T05:52:23.991Z] Building nodejs source
+[debug] [2024-09-17T05:52:23.992Z] Failed to find version of module node: reached end of search path C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-09-17T05:52:23.996Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-09-17T05:52:24.004Z] Found firebase-functions binary at 'C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8432
+
+[debug] [2024-09-17T05:52:25.096Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/albukhbah-world/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/albukhbah-world/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4002/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4002/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-09-17T07:01:41.715Z] ----------------------------------------------------------------------
+[debug] [2024-09-17T07:01:41.723Z] Command:       C:\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2024-09-17T07:01:41.724Z] CLI Version:   13.16.0
+[debug] [2024-09-17T07:01:41.724Z] Platform:      win32
+[debug] [2024-09-17T07:01:41.725Z] Node Version:  v20.11.1
+[debug] [2024-09-17T07:01:41.725Z] Time:          Tue Sep 17 2024 10:01:41 GMT+0300 (Arabian Standard Time)
+[debug] [2024-09-17T07:01:41.725Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-17T07:01:41.878Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-17T07:01:41.878Z] > authorizing via signed-in user (emadalhaj2022@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2024-09-17T07:01:41.890Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] !  ui: Emulator UI unable to start on port 4000, starting on 4003 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4003 instead."}}
+[debug] [2024-09-17T07:01:41.892Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4003},{"address":"::1","family":"IPv6","port":4003}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project albukhbah-world. This may result in unexpected behavior. 
+[debug] [2024-09-17T07:01:41.899Z] [hub] writing locator at C:\Users\User\AppData\Local\Temp\hub-albukhbah-world.json
+[debug] [2024-09-17T07:01:41.962Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-09-17T07:01:41.962Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-09-17T07:01:41.962Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-09-17T07:01:41.962Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4003},{"address":"::1","family":"IPv6","port":4003}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2024-09-17T07:01:41.968Z] defaultcredentials: writing to file C:\Users\User\AppData\Roaming\firebase\emadalhaj2022_gmail_com_application_default_credentials.json
+[debug] [2024-09-17T07:01:41.971Z] Setting GAC to C:\Users\User\AppData\Roaming\firebase\emadalhaj2022_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\User\\AppData\\Roaming\\firebase\\emadalhaj2022_gmail_com_application_default_credentials.json"}}
+[debug] [2024-09-17T07:01:41.972Z] > refreshing access token with scopes: []
+[debug] [2024-09-17T07:01:41.974Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-09-17T07:01:41.974Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-09-17T07:01:42.552Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-09-17T07:01:42.552Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-09-17T07:01:42.578Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/albukhbah-world/adminSdkConfig [none]
+[debug] [2024-09-17T07:01:44.519Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/albukhbah-world/adminSdkConfig 200
+[debug] [2024-09-17T07:01:44.519Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/albukhbah-world/adminSdkConfig {"projectId":"albukhbah-world","storageBucket":"albukhbah-world.appspot.com"}
+[debug] [2024-09-17T07:01:44.543Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-09-17T07:01:44.543Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-09-17T07:01:44.543Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\User\\.cache\\firebase\\emulators\\ui-v1.13.0\\server\\server.mjs"],"optionalArgs":[],"joinArgs":false,"shell":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\User\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.13.0\\\\server\\\\server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false,\"shell\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-09-17T07:01:44.736Z] Web / API server started at 127.0.0.1:4003
+Web / API server started at ::1:4003
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4003\nWeb / API server started at ::1:4003\n"}}
+[info] i  functions: Watching "C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\User\\Desktop\\All Projects\\myreact\\alnukhbah website\\app\\functions\" for Cloud Functions..."}}
+[debug] [2024-09-17T07:01:44.788Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-09-17T07:01:46.558Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0",
+    "stripe": "^16.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-09-17T07:01:46.559Z] Building nodejs source
+[debug] [2024-09-17T07:01:46.559Z] Failed to find version of module node: reached end of search path C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-09-17T07:01:46.566Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-09-17T07:01:46.576Z] Found firebase-functions binary at 'C:\Users\User\Desktop\All Projects\myreact\alnukhbah website\app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8339
+
+[debug] [2024-09-17T07:01:47.698Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/albukhbah-world/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/albukhbah-world/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4003/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4003/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-09-17T07:02:09.189Z] Functions emulator received unknown request at path /favicon.ico
