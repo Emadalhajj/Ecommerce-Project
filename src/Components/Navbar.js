@@ -18,8 +18,7 @@ import { logout } from "../redux/auth/authSlice";
 import Swal from "sweetalert2";
 import Dropdown from "react-bootstrap/Dropdown";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-
+import { logOut, setlogOut } from "../redux/actions/allAction";
 
 
 
@@ -27,15 +26,16 @@ const user = localStorage.getItem("user");
 
 export default function NavBar() {
   const navgite = useNavigate();
-  const bage = useSelector((state) => state.card); // عدد المنتجات في السلة
-  const bageFavorite = useSelector((state) => state.favorite);
-  const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
+  const bage = useSelector((state) => state.reducerCrad.card) || []; // عدد المنتجات في السلة
 
-  // console.log('cardss' , cart);
+  const bageFavorite = useSelector((state) => state.favorite);
+  const isLoggedIn = useSelector((state) => state.logIn.isLoggedIn);
+  
+  console.log('cardss' , bage);
   const dispatch = useDispatch();
 
   const handleLogout = () => {
-    dispatch(logout());
+    dispatch(setlogOut());
   };
 
   return (
@@ -61,11 +61,11 @@ export default function NavBar() {
             <Link className="nav-link" to="/products">
               Products
             </Link>
-            {/* {!isLoggedIn && (
+            {!isLoggedIn && (
           <Link className="nav-link d-flex align-items-center" to="/signUpPage">
             <FontAwesomeIcon icon={faUserPlus} /> signup
           </Link>
-        )} */}
+        )}
           </Nav>
           <Nav>
             <Link
@@ -82,14 +82,13 @@ export default function NavBar() {
                   className="nav-link border rounded"
                   to="/cartPage"
                 >
-                  <FontAwesomeIcon icon={faShoppingCart} />Card ({bage.length})
+                  <FontAwesomeIcon icon={faShoppingCart} />Card 
+                  ({bage.length})
                 
                 </Link>
          
             {isLoggedIn ? (
-              <>
-            
-
+              <>           
                 <Dropdown>
                   <Dropdown.Toggle
                     variant="light"

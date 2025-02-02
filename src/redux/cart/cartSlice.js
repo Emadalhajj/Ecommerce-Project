@@ -36,6 +36,7 @@ const cardsSlice = createSlice({
         const product = state.find((item) => item.id === id);
         if (product) {
           product.quantity = quantity;
+          
         }
     }
 

@@ -3,7 +3,7 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 
 const Footer = () => {
   return (
-    <footer className="text-center py-3 " style={{marginBottom:"0px" , backgroundColor: "#000", color: "#fff", padding: "40px 0" }}>
+    <footer className="text-strat py-3 " style={{marginBottom:"0px" , backgroundColor: "#000", color: "#fff", padding: "40px 0" }}>
       <Container>
         {/* Footer Content */}
         <Row  >
@@ -33,9 +33,9 @@ const Footer = () => {
           {/* Column 2: Support */}
           <Col md={3}>
             <h5>Support</h5>
-            <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+            <p>111 Makkah city, Dhaka, DH 1515, ksa.</p>
             <p>exclusive@gmail.com</p>
-            <p>+88015-88888-9999</p>
+            <p>+966-56643-8781</p>
           </Col>
 
           {/* Column 3: Account */}
@@ -62,14 +62,18 @@ const Footer = () => {
           </Col>
 
           {/* Column 5: Download App */}
-          <Col md={2} className="justify-content-center align-items-center">
+          <Col md={2} className="justify-content-strat align-items-center">
             <h5>Download App</h5>
-            <p>Save $3 with App New User Only</p>
+            <p>Save $3 with App New User</p>
             <div className="d-flex mb-2">
               <img
                 src="/images/download.png"
                 alt="QR Code"
                 className="me-2"
+                style={{
+                  objectFit:"contain",
+                width :'180px'
+                }}
               />
               {/* <div>
                 <img
@@ -95,7 +99,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <hr className="w-100"/>
         <div className="text-center mt-2" style={{  paddingTop: "5px" }}>
-          <p>© Copyright Eng.Emad 2022. All rights reserved</p>
+          <p>© Copyright Eng.Emad 2025. All rights reserved</p>
         </div>
       </Container>
     </footer>

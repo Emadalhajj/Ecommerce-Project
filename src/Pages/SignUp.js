@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { registerUser } from "../redux/auth/authSlice";
 import Swal from "sweetalert2";
+import { RegisterUser } from "../redux/actions/allAction";
 
 
 const SignUpPage = () => {
@@ -24,18 +25,20 @@ const SignUpPage = () => {
     const password = passwordRef.current.value;
 
     if (userName && email && password) {
-      dispatch(registerUser({ userName, email, password }))
-      .unwrap()
-      .then(() => {
-        Swal.fire({
-          position: "top-end",
-          icon: "success",
-          title: "Registration successful!",
-          showConfirmButton: false,
-          timer: 1500,
-        });
-        navigate("/signIn");
-      })
+      dispatch(RegisterUser({ userName, email, password }))
+      // .unwrap()
+      // .then(() => {
+     
+      // })
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Registration successful!",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+      navigate("/signIn");
+      
 
     }else{
       Swal.fire({
@@ -45,7 +48,7 @@ const SignUpPage = () => {
       });
   }
   };
-  const authError = useSelector((state) => state.auth.error);
+  const authError = useSelector((state) => state.logIn.error);
 if (authError) {
   Swal.fire({
     icon: "error",
@@ -114,7 +117,7 @@ if (authError) {
               </Button>
             </Form>
             <p className="text-center">
-              Already have an account?{" "}
+              Aready have an account?{" "}
               <Link to={'/signIn'}> Log in </Link>
                 
               

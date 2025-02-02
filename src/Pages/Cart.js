@@ -9,30 +9,30 @@ import {
   Card,
 } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import { deleteCard, updateQuantity } from "./cartSlice";
+// import { deleteCard, updateQuantity } from "../redux/cart/cartSlice";
+import { handleRemoveFcard, updateQuantity } from "../redux/actions/allAction";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 
-
 const CartPage = () => {
-  const prodectList = useSelector((state) => state.card) || [];
-  const dispatch = useDispatch()
-  const navigate = useNavigate()
+  const prodectList = useSelector((state) => state.reducerCrad.card) || [];
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
-  localStorage.setItem('ProductsCard' , JSON.stringify(prodectList))
+  localStorage.setItem("ProductsCard", JSON.stringify(prodectList));
 
-  // console.log("prodectList", prodectList);
+  console.log("prodectList", prodectList);
 
   const [cartItems, setCartItems] = useState(prodectList);
 
-//   const handleQuantityChange = (id, quantity) => {
-//     const updatedItems = cartItems.map((item) =>
-//       item.id === id ? { ...item, quantity: parseInt(quantity) } : item
-//     );
-//     setCartItems(updatedItems);
-//   };
-const handleQuantityChange = (id, quantity) => {
-    dispatch(updateQuantity({ id, quantity: parseInt(quantity) }));
+  const handleQuantityChange = (id, quantity) => {
+    const qty = parseInt(quantity);
+    if (isNaN(qty) || qty <= 0) {
+      console.error("Invalid quantity:", quantity);
+      return;
+    }
+    dispatch(updateQuantity({ id, qty }));
+    // console.log("Dispatching updateQuantity:", { id, qty: parseInt(quantity) });
   };
 
   const handleRemoveItem = (id) => {
@@ -48,7 +48,7 @@ const handleQuantityChange = (id, quantity) => {
     }).then((result) => {
       if (result.isConfirmed) {
         // حذف العنصر من Redux Store
-        dispatch(deleteCard({ id }));
+        dispatch(handleRemoveFcard(id));
 
         Swal.fire({
           title: "Deleted!",
@@ -61,7 +61,7 @@ const handleQuantityChange = (id, quantity) => {
 
   const calculateSubtotal = () => {
     return prodectList
-      .reduce((acc, item) => acc + item.price * item.quantity, 0)
+      .reduce((acc, item) => acc + item.price * item.qty, 0)
       .toFixed(2);
   };
 
@@ -92,26 +92,32 @@ const handleQuantityChange = (id, quantity) => {
                       className="align-middle border-bottom bg-white"
                     >
                       {/* العمود الأول: المنتج */}
-                      <td style={{position :"relative"}} className="d-flex align-items-center">
+                      <td
+                        style={{ position: "relative" }}
+                        className="d-flex align-items-center"
+                      >
                         <img
                           src={item.image}
                           alt={item.title}
                           className="me-3"
                           style={{ width: "60px", height: "60px" }}
                         />
-                        <div  >
+                        <div>
                           {item.title}
-                          <Button onClick={()=>{handleRemoveItem(item.id)}}
+                          <Button
+                            onClick={() => {
+                              handleRemoveItem(item.id);
+                            }}
                             variant="danger"
                             size="sm"
                             className="ms-3"
-                            style={{ 
-                                borderRadius: "50%",
-                                width : "30px", 
-                                height : "30px", 
-                                position: "absolute",
-                                top :"-15px",
-                                left : "-15px"
+                            style={{
+                              borderRadius: "50%",
+                              width: "30px",
+                              height: "30px",
+                              position: "absolute",
+                              top: "-15px",
+                              left: "-15px",
                             }}
                           >
                             x
@@ -124,23 +130,39 @@ const handleQuantityChange = (id, quantity) => {
 
                       {/* العمود الثالث: الكمية */}
                       <td>
-                        <input
-                          type="number"
-                          min="1"
-                          value={item.quantity}
-                          onChange={(e) =>
-                            handleQuantityChange(item.id, e.target.value)
-                          }
-                          className="form-control text-center"
-                          style={{
-                            width: "70px",
-                            borderRadius: "5px",
-                          }}
-                        />
+                        <div className="d-flex align-items-center">
+                          <button
+                            className="btn btn-sm btn-outline-secondary"
+                            onClick={() =>
+                              handleQuantityChange(item.id, item.qty + 1)
+                            }
+                          >
+                            +
+                          </button>
+                          <input
+                            type="number"
+                            min="1"
+                            value={item.qty}
+                            onChange={(e) =>
+                              handleQuantityChange(item.id, e.target.value)
+                            }
+                            className="form-control text-center mx-2"
+                            style={{ width: "70px", borderRadius: "5px" }}
+                          />
+                          <button
+                            className="btn btn-sm btn-outline-secondary"
+                            onClick={() =>
+                              handleQuantityChange(item.id, item.qty - 1)
+                            }
+                            disabled={item.qty <= 1}
+                          >
+                            -
+                          </button>
+                        </div>
                       </td>
 
                       {/* العمود الرابع: الإجمالي الفرعي */}
-                      <td>${item.price * item.quantity}</td>
+                      <td>${item.price * item.qty}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -151,7 +173,11 @@ const handleQuantityChange = (id, quantity) => {
 
         <Row className="mb-4">
           <Col md={6}>
-            <Button onClick={()=> window.location.href='/homePage'} variant="outline-dark" className="me-2">
+            <Button
+              onClick={() => (window.location.href = "/homePage")}
+              variant="outline-dark"
+              className="me-2"
+            >
               Return To Shop
             </Button>
           </Col>
@@ -175,12 +201,12 @@ const handleQuantityChange = (id, quantity) => {
             <Card className="p-3">
               <h5>Cart Total</h5>
 
-               <div className="d-flex justify-content-between">
+              <div className="d-flex justify-content-between">
                 <span>Subtotal:</span>
                 <span>${calculateSubtotal()}</span>
               </div>
               <hr />
-             
+
               <div className="d-flex justify-content-between">
                 <span>Shipping:</span>
                 <span>Free</span>
@@ -188,9 +214,15 @@ const handleQuantityChange = (id, quantity) => {
               <hr />
               <div className="d-flex justify-content-between">
                 <span>Total:</span>
-                <span style={{fontWeight:"bold" }} >${calculateSubtotal()}</span>
+                <span style={{ fontWeight: "bold" }}>
+                  ${calculateSubtotal()}
+                </span>
               </div>
-              <Button onClick={handleCheckout} variant="danger" className="w-100 mt-3">
+              <Button
+                onClick={handleCheckout}
+                variant="dark"
+                className="w-100 mt-3"
+              >
                 Proceed to checkout
               </Button>
             </Card>
@@ -198,8 +230,6 @@ const handleQuantityChange = (id, quantity) => {
         </Row>
       </Container>
     </>
-
-
   );
 };
 
